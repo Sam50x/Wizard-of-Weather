@@ -1,0 +1,122 @@
+:root{
+    --header-font-size: 30px;
+    --header-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: black;
+    margin: 0 0 10px;
+}
+
+.header h1{
+    text-align: center;
+    color: var(--header-color);
+    font-size: calc(var(--header-font-size));
+}
+
+.header h1 span{
+    font-size: calc(var(--header-font-size) + 15px);
+}
+
+
+.get-weather{
+    height: 50vh;
+    padding: 10px;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-weather h3{
+    padding: 10px;
+    margin: 0 0 10px;
+    color: var(--header-color);
+    font-size: var(--header-font-size);
+    text-align: center;
+}
+
+.get-weather input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 0 0 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.get-weather button{
+    border: none;
+    background: none;
+    margin: 18px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    transition: 0.5s;
+}
+
+.get-weather button:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 20px;
+    tex-align: center;
+    padding: 15px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px black;
+    transition: 0.5s;
+}
+
+.weather-container h2{
+    color: var(--header-color);
+    font-size: calc(var(--header-font-size) + 5px);
+    padding: 5px;
+    margin: 0 0 10px;
+}
+
+.weather-container p{
+    color: var(--header-color);
+    font-size: calc(var(--header-font-size) - 10px);
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+@media (min-height: 1000px){
+    :root{
+        --header-font-size: 50px
+    }
+
+    .header{
+        height: 30vh;
+    }
+
+    .get-weather input{
+        font-size: 40px;
+    }
+    
+    .get-weather button{
+        font-size: 40px;
+    }
+}
